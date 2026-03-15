@@ -1,0 +1,29 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Projeto - Interface para Login </title>
+    <link rel="stylesheet" href="projeto-login.css">
+</head>
+<body>
+    <div id="container">
+        <h1> Faça seu Login: </h1>
+        <form id="suporteform">
+            <label id="nome">Nome:</label>
+            <i id="icon-nome" class="fas fa-user"></i>
+            <input id="caixa-nome" type="text" placeholder="Digite seu nome:...">
+            <label id="nasc">Data de Nascimento:</label>
+            <i id="icon-nasc" class="fas fa-calendar-alt"></i>
+            <input id="caixa-nasc" type="date">
+            <label id="email">E-mail:</label>
+            <i id="icon-email" class="fas fa-envelope"></i>
+            <input id="caixa-email" type="email" placeholder="Digite seu e-mail:...">
+            <label id="senha">Senha:</label>
+            <i id="icon-senha" class="fas fa-lock"></i>
+            <input id="caixa-senha" type="password" placeholder="Digite sua senha:...">
+            <button id="enviar" type="submit"> Enviar </button>
+        </form>
+        <div id="aviso" class="feedback"></div>
+    </div>
+    <script src="projetologin.js"></script>
+</body>
+</html>
