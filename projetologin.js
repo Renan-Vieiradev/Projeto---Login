@@ -7,10 +7,12 @@ form.addEventListener("submit", function(e){
     e.preventDefault();
     const nome = document.getElementById("caixa-nome").value.trim();
     const email = emailInput.value.trim();
+    const nasc = document.getElementByID("nasc").value.trim();
+    const senha = document.getElementByID("senha").value.trim();
 
 const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
-if(!nome || !email || !assunto || !mensagemVal){
+if(!nome || !email || !date || !senha){
 feedback.textContent = "Erro: Preencha todos os campos!";
 feedback.className = "feedback error";
 feedback.style.display = "block";
